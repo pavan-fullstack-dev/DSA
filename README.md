@@ -26,9 +26,9 @@ Personal DSA study repo. Docs are generated one phase at a time, then studied be
 >
 > **Style:** direct, no filler. Correct me when I'm wrong rather than hedging. Include the honest/nuanced answer where the textbook answer is misleading (e.g. string `+=` is not really O(n²) in V8 because of rope structures — I want that kind of detail, not the simplified version).
 >
-> **Completed so far:** Phase 0 (complexity analysis). See `phase-0-complexity-analysis.md` in this repo.
+> **Completed so far:** Phase 0 (complexity analysis) — `phase-0-complexity-analysis.md`. Phase 1 doc generated and in study — `phase-1-arrays-two-pointers.md`.
 >
-> **Next up:** Phase 1 — Arrays & Two Pointers.
+> **Next up:** finish studying Phase 1, then Phase 2 — Hashing.
 
 ---
 
@@ -37,8 +37,8 @@ Personal DSA study repo. Docs are generated one phase at a time, then studied be
 | Phase | Days | Topic | Status |
 |---|---|---|---|
 | 0 | 1–2 | Foundations — Big-O, space complexity, amortized analysis, JS cost table | ✅ Done |
-| 1 | 3–9 | Arrays & Two Pointers — sliding window, prefix sum | ⬜ Next |
-| 2 | 10–13 | Hashing — Map/Set, frequency counters, grouping | ⬜ |
+| 1 | 3–9 | Arrays & Two Pointers — sliding window, prefix sum | 📖 Studying |
+| 2 | 10–13 | Hashing — Map/Set, frequency counters, grouping | ⬜ Next |
 | 3 | 14–19 | Sorting & Binary Search — templates, variants, search on answer space | ⬜ |
 | 4 | 20–26 | Recursion & Backtracking — subsets, permutations, grid | ⬜ |
 | 5 | 27–30 | Linked Lists — reversal, fast/slow, doubly linked | ⬜ |
@@ -65,7 +65,7 @@ If an interview lands early: complexity → hashing → two pointers/sliding win
 ├── README.md                          ← this file
 ├── dsa-roadmap.md                     ← the full 70-day plan
 ├── phase-0-complexity-analysis.md     ← ✅ complete
-├── phase-1-arrays-two-pointers.md     ← to generate
+├── phase-1-arrays-two-pointers.md     ← 📖 complete, studying
 ├── ...
 ├── solutions/                         ← my own solution files, one per problem
 └── log.md                             ← daily progress log
