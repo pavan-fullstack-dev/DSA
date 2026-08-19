@@ -4,6 +4,24 @@ Personal DSA study repo. Docs are generated one phase at a time, then studied be
 
 ---
 
+## Start here — reading order
+
+| Order | File | What it is |
+|---|---|---|
+| 1 | `glossary.md` | **Read this first, once.** Plain-English definitions of every term used across all phases — *window*, *V8*, *in place*, *subarray vs subsequence*, Big-O, pointer names, code shorthand. |
+| 2 | `phase-1-arrays-two-pointers.md` | **The whole of Phase 1, one file, plain English.** Every heading says what the section is and when to use it. Each pattern gets: what it is → when to use it → the code → a step-by-step walkthrough on real numbers → mistakes. Ends with 32 practice problems and worked answers. |
+| — | `dsa-roadmap.md` | The 70-day schedule. |
+
+**One file per phase.** Phase 1 has a Part 0 that defines its own vocabulary, so it stands
+alone; `glossary.md` is the shared dictionary across every phase.
+
+**Doc style rule for every future phase:** define a term the first time it appears, or
+put it in `glossary.md`. Headings must say *what the thing is and when you use it*, not
+just name it. Every pattern needs a worked walkthrough on real numbers, not only a
+template.
+
+---
+
 ## Context (paste this into a new chat to continue)
 
 > I'm a Senior Full Stack Developer with ~6 years of experience. My stack is React.js, React Native, TypeScript, Node.js, TanStack Query, and Playwright. I'm preparing for frontend/React developer interviews and working through DSA in **JavaScript only** — not Python, not C++.
@@ -26,9 +44,13 @@ Personal DSA study repo. Docs are generated one phase at a time, then studied be
 >
 > **Style:** direct, no filler. Correct me when I'm wrong rather than hedging. Include the honest/nuanced answer where the textbook answer is misleading (e.g. string `+=` is not really O(n²) in V8 because of rope structures — I want that kind of detail, not the simplified version).
 >
-> **Completed so far:** Phase 0 (complexity analysis) — `phase-0-complexity-analysis.md`. Phase 1 doc generated and in study — `phase-1-arrays-two-pointers.md`.
+> **But plain language, and define your terms.** Do not use a piece of jargon before defining it — *window*, *V8*, *in place*, *monotone*, *invariant*, *auxiliary space* all need a one-line definition on first use or an entry in `glossary.md`. Headings must say **what the section is and when I'd use it** ("Sliding window — use it when the answer is a continuous chunk"), not just name the topic ("Sliding window with counters"). Every pattern needs a **step-by-step walkthrough on real numbers** in a table, not just a code template. Assume I have to be able to re-derive it cold, not recognize it.
 >
-> **Next up:** finish studying Phase 1, then Phase 2 — Hashing.
+> **One file per phase**, and it must stand alone — no companion "simple version". Shared jargon lives in `glossary.md`, and each phase doc opens with a Part 0 defining the words it uses.
+>
+> **Completed so far:** Phase 0 (complexity analysis) — `phase-0-complexity-analysis.md`. Phase 1 in study — `phase-1-arrays-two-pointers.md`.
+>
+> **Next up:** finish studying Phase 1, then Phase 2 — Hashing. Match the Phase 1 document's structure, and add any new terms to `glossary.md`.
 
 ---
 
@@ -63,9 +85,10 @@ If an interview lands early: complexity → hashing → two pointers/sliding win
 ```
 /
 ├── README.md                          ← this file
+├── glossary.md                        ← plain-English definitions (read first)
 ├── dsa-roadmap.md                     ← the full 70-day plan
 ├── phase-0-complexity-analysis.md     ← ✅ complete
-├── phase-1-arrays-two-pointers.md     ← 📖 complete, studying
+├── phase-1-arrays-two-pointers.md     ← 📖 all of Phase 1, plain English
 ├── ...
 ├── solutions/                         ← my own solution files, one per problem
 └── log.md                             ← daily progress log
